@@ -6,13 +6,13 @@
 */
 
 /*--------------------------------------------------------------
-# Set main reusable colors and fonts using CSS variables
+# Set main reusable colors  and fonts using CSS variables
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "Roboto", sans-serif;
+  --font-primary: "Work Sans", sans-serif;
   --font-secondary: "Work Sans", sans-serif;
 }
 
@@ -124,6 +124,14 @@ section {
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   inset: 0;
+}
+
+.breadcrumbs .bread-box {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 10px 20px; 
+  border-radius: 1px;
+  text-align: center; 
+  color: white; 
 }
 
 .breadcrumbs h2 {
@@ -258,19 +266,19 @@ section {
 .header {
   z-index: 997;
   position: absolute;
-  padding: 30px 0;
-  top: 0;
+  padding: 25px 0;
+    top: 0;
   left: 0;
   right: 0;
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 60px;
   margin-right: 6px;
 }
 
 .header .logo h1 {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
   color: #fff;
   margin-bottom: 0;
@@ -279,6 +287,14 @@ section {
 
 .header .logo h1 span {
   color: var(--color-primary);
+}
+
+.header .subheading {
+  font-size: 10px;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  margin-top: 1px;
 }
 
 /*--------------------------------------------------------------
@@ -315,7 +331,7 @@ section {
     font-family: var(--font-primary);
     font-size: 14px;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255);
     text-transform: uppercase;
     white-space: nowrap;
     transition: 0.3s;
@@ -353,7 +369,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: #220303;
   }
 
   .navbar .dropdown ul {
@@ -1196,6 +1212,8 @@ section {
   margin: 30px 0;
 }
 
+
+
 @media (min-width: 991px) {
   .about h2 {
     max-width: 65%;
@@ -1683,17 +1701,60 @@ section {
   margin-bottom: 0;
 }
 
-.contact .php-email-form {
-  width: 100%;
-  background: #fff;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
-  padding: 30px;
+
+.contact .php-email-form .your-message {
+  font-family: var(--font-primary);
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: grey;
 }
+
+.contact .php-email-form .form-label{
+  font-family: var(--font-primary);
+  font-size: 20px;
+  color: grey;
+}
+
+.contact .php-email-form .form-control:focus {
+  border-color: #007bff;
+  background-color: #f1f9ff; 
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  font-family: var(--font-primary);
+}
+
 
 .contact .php-email-form .form-group {
-  padding-bottom: 20px;
+  font-family: var(--font-primary);
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid red;
+  padding-bottom: 5px;
+  font-size: 20px;
 }
 
+.contact .php-email-form .form-text-box {
+  font-family: var(--font-primary);
+  width: 100%;
+  font-size: 20px;
+  border: 2px solid red;
+}
+
+.contact .php-email-form button[type=submit] {
+  margin-top: 30px;
+  background: var(--color-primary);
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  border-color: #007bff;
+  background: #007bff;
+}
+
+/*
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
@@ -1756,18 +1817,6 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
-  background: var(--color-primary);
-  border: 0;
-  padding: 10px 35px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 5px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: rgba(254, 185, 0, 0.8);
-}
 
 @keyframes animate-loading {
   0% {
@@ -1778,6 +1827,7 @@ section {
     transform: rotate(360deg);
   }
 }
+  */
 
 /*--------------------------------------------------------------
 # Recent Blog Posts Section
@@ -1883,7 +1933,7 @@ section {
 
 .hero .carousel-item::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   inset: 0;
 }
@@ -2010,7 +2060,7 @@ section {
   background: url("../img/footer-bg.jpg") top center no-repeat;
   background-size: cover;
   font-size: 14px;
-  padding: 25px 0 25px 0;
+  padding: 25px 0;
   position: relative;
 }
 
@@ -2114,4 +2164,35 @@ section {
 
 .footer .footer-legal .credits a {
   color: var(--color-primary);
+}
+
+@media (max-width: 1199px) {
+  .footer .footer-content .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Ensures all content is centered */
+  }
+
+  /* Center the logo in this range */
+  .footer .footer-content .col-lg-3, 
+  .footer .footer-content .col-md-4 {
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Ensure social media icons are centered */
+  .footer .footer-content .social-links {
+    justify-content: center;
+    text-align: center;
+    display: flex; /* Ensure the social links are in a row */
+  }
+
+  .footer .footer-content .social-links a {
+    margin-right: 10px; /* Optional: Adds space between the icons */
+  }
+
+  /* Optional: Adjust logo max-width on smaller screens */
+  .footer .footer-content .col-lg-3 img {
+    max-width: 150px; /* Reduce the size of the logo on smaller screens */
+  }
 }
