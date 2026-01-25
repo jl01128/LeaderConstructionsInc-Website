@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -43,9 +43,9 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/Logo.png" alt="">
+        <img src="assets/img/Logo.png" alt="Logo for Leader Construction" loading="lazy">
         <div class="logo-text d-flex flex-column align-items-start">
-          <h1><b>LEADERS</b><span>.</span></h1>
+          <h1><b>LEADERS</b></h1>
           <div class="subheading">
             <span>CONSTRUCTION INC</span>
           </div>
@@ -56,10 +56,9 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="expertise.html">Our Services</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact US</a></li>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#alt-services-3">Services</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -67,194 +66,226 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero">
-
-    <div class="info d-flex align-items-center">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 text-center">
-            <h2 data-aos="fade-down"><br><i>Leaders</i> in Quality, <i>Builders</i> of Trust</br></h2>
+  <section id="hero" class="hero d-flex align-items-center justify-content-center">
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="hero-carousel-inner">
+        <div class="carousel-item active" style="background-image: url('assets/img/hero-carousel/hero-carousel-1.jpg');">
+          <div class="carousel-caption d-md-block">
+            <h5>Innovative Design Solutions</h5>
           </div>
         </div>
+        <div class="carousel-item" style="background-image: url('assets/img/hero-carousel/hero-carousel-2.jpg');">
+          <div class="carousel-caption d-md-block">
+            <h5>Effective Project Management</h5>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('assets/img/hero-carousel/hero-carousel-3.jpg');">
+          <div class="carousel-caption d-md-block">
+            <h5>Reasonable Budgeting Scheduling</h5>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('assets/img/hero-carousel/hero-carousel-4.jpg');">
+          <div class="carousel-caption d-md-block">
+            <h5>Knowledgeable in governmental codes, rules, and regulations.</h5>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('assets/img/hero-carousel/hero-carousel-5.jpeg');">
+          <div class="carousel-caption   d-md-block">
+            <h5>Expertise in professional permitting services.</h5>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
       </div>
     </div>
-
-    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-
-      <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/hero-carousel-1.jpg)">
-      </div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-2.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-3.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-4.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-5.jpg)"></div>
-
-      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-      </a>
-
-      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a>
-
-    </div>
-
   </section><!-- End Hero Section -->
 
   <main id="main">
-      <!-- ======= Services Section ======= -->
-      <section id="services" class="services section-bg">
-        <div class="container" data-aos="fade-up">
-  
-          <div class="row gy-4">
-  
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-item  position-relative">
-                <div class="icon">
-                  <i class="fa-solid fa-mountain-city"></i>
-                </div>
-                <h3>General Contracting</h3>
-                <p></p>
-                <a href="general-contracting-service-details.html" class="readmore stretched-link">Learn more <i
-                    class="bi bi-arrow-right"></i></a>
-              </div>
-            </div><!-- End Service Item -->
-  
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-item position-relative">
-                <div class="icon">
-                  <i class="fa-solid fa-arrow-up-from-ground-water"></i>
-                </div>
-                <h3>Renovations</h3>
-                <p></p>
-                <a href="renovations-service-details.html" class="readmore stretched-link">Learn more <i
-                    class="bi bi-arrow-right"></i></a>
-              </div>
-            </div><!-- End Service Item -->
-  
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="service-item position-relative">
-                <div class="icon">
-                  <i class="fa-solid fa-compass-drafting"></i>
-                </div>
-                <h3>Pre-Construction</h3>
-                <p></p>
-                <a href="pre-construction-service-details.html" class="readmore stretched-link">Learn more <i
-                    class="bi bi-arrow-right"></i></a>
-              </div>
-            </div><!-- End Service Item -->
-  
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-              <div class="service-item position-relative">
-                <div class="icon">
-                  <i class="fa-solid fa-trowel-bricks"></i>
-                </div>
-                <h3>Construction Management</h3>
-                <p></p>
-                <a href="construction-managment-service-details.html" class="readmore stretched-link">Learn more <i
-                    class="bi bi-arrow-right"></i></a>
-              </div>
-            </div><!-- End Service Item -->
-  
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-              <div class="service-item position-relative">
-                <div class="icon">
-                  <i class="fa-solid fa-helmet-safety"></i>
-                </div>
-                <h3>Safety</h3>
-                <p></p>
-                <a href="safety-service-details.html" class="readmore stretched-link">Learn more <i
-                    class="bi bi-arrow-right"></i></a>
-              </div>
-            </div><!-- End Service Item -->
-  
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-              <div class="service-item position-relative">
-                <div class="icon">
-                  <i class="fa-solid fa-arrow-up-from-ground-water"></i>
-                </div>
-                <h3>Sustainability</h3>
-                <p></p>
-                <a href="substainability-service-details.html" class="readmore stretched-link">Learn more <i
-                    class="bi bi-arrow-right"></i></a>
-              </div>
-            </div><!-- End Service Item -->
-  
-          </div>
-  
-        </div>
-      </section><!-- End Services Section -->
-
-    <!-- ======= Alt Services Section ======= -->
-    <section id="alt-services" class="alt-services">
+    <section id="about" class="about">
       <div class="container" data-aos="fade-up">
-
-        <div class="row justify-content-around gy-4">
-          <div class="col-lg-6 img-bg" style="background-image: url(assets/img/sites.png);" data-aos="zoom-in"
-            data-aos-delay="100"></div>
-
-          <div class="col-lg-5 d-flex flex-column justify-content-center">
-            <h3>Location</h3>
-            <p></p>
-
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
-              <i class="bi bi-easel flex-shrink-0"></i>
-              <div>
-                <h4><a href="" class="stretched-link"></a></h4>
-                <p></p>
+        <div class="icon-box">
+          <div class="row justify-content-center text-center mb-4">
+            <div class="col-lg-2 col-md-2 col-6 mb-4 mb-md-0">
+              <div class="icon-box">
+                <i class="bi bi-award" style="color: red; font-size: 2rem;"></i>
+                <h6>Project Management</h6>
               </div>
-            </div><!-- End Icon Box -->
-
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-patch-check flex-shrink-0"></i>
-              <div>
-                <h4><a href="" class="stretched-link">Opened Many Business</a></h4>
-                <p>Leaders Construction Inc have opened many businesss throughout Florida</p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-6 mb-4 mb-md-0">
+              <div class="icon-box">
+                <i class="bi bi-pencil-square" style="color: red; font-size: 2rem;"></i>
+                <h6>Design</h6>
               </div>
-            </div><!-- End Icon Box -->
-
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-brightness-high flex-shrink-0"></i>
-              <div>
-                <h4><a href="" class="stretched-link">Dine Pad</a></h4>
-                <p>Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus
-                  aut eligendi omnis</p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-6 mb-4 mb-md-0">
+              <div class="icon-box">
+                <i class="bi bi-file-earmark-text" style="color: red; font-size: 2rem;"></i>
+                <h6>Permitting</h6>
               </div>
-            </div><!-- End Icon Box -->
-
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-brightness-high flex-shrink-0"></i>
-              <div>
-                <h4><a href="" class="stretched-link">Tride clov</a></h4>
-                <p>Est voluptatem labore deleniti quis a delectus et. Saepe dolorem libero sit non aspernatur odit amet.
-                  Et eligendi</p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-6 mb-4 mb-md-0">
+              <div class="icon-box">
+                <i class="bi bi-cash-stack" style="color: red; font-size: 2rem;"></i>
+                <h6>Budgeting</h6>
               </div>
-            </div><!-- End Icon Box -->
-
+            </div>
+            <div class="col-lg-2 col-md-2 col-6 mb-4 mb-md-0">
+              <div class="icon-box">
+                <i class="bi bi-tools" style="color: red; font-size: 2rem;"></i>
+                <h6>Equipment & Material</h6>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-6 mb-4 mb-md-0">
+              <div class="icon-box">
+                <i class="bi bi-building" style="color: red; font-size: 2rem;"></i>
+                <h6>Construction</h6>
+              </div>
+            </div>
           </div>
+        </div>
+        <div class="row position-relative">
+
+        <div class="col-lg-5 about-img" style="background-image: url(assets/img/about.jpg);"></div>
+
+          <div class="col-lg-7">
+            <h2></h2>
+            <div class="our-story">
+              <h3>Who We Are</h3>
+              <p>Leaders Construction Inc. is the known leading construction firm specializing in the design, permitting, and construction of commercial and residential projects across Florida. Our foundation is built on:</p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> <span>Integrity</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Respect</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Hard Work</span></li>
+              </ul>
+              <p>We are experienced on budgeting, scheduling, designing and completing construction projects successfully. We are familiar with governmental codes, rules, and regulations.</p>
+            </div>
+          </div>
+
         </div>
 
       </div>
-    </section><!-- End Alt Services Section -->
+    </section>
+    <!-- End About Section -->
+
+    <section id="combined-services" class="alt-services-10">
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-between gy-4">
+          
+          <!-- Left Column (Goal) -->
+          <div class="col-lg-5 d-flex flex-column justify-content-center">
+            <h3>Our Goal</h3>
+            <p>Our goal is to meet our client's needs and complete the design and construction that fit the client's budget and schedule while meeting local governmental codes, rules, and regulations.</p>
+          </div>
+    
+          <!-- Right Column (Vision) -->
+          <div class="col-lg-5 d-flex flex-column justify-content-center">
+            <h3>Our Vision</h3>
+            <p>To be a trusted leader in the construction industry, known for excellence, innovation, and unwavering integrity.</p>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    
+    <!-- ======= Alt Services Section ======= -->
+    <section id="alt-services-3" class="alt-services">
+      <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-around gy-4">
+        <div class="col d-flex flex-column justify-content-center">
+          <h3>Our Services</h3>
+          <p>We provide services in residential and commercial renovation and new construction projects in the State of Florida. Our services include <a style="color: #4169E1" href="#projects" onclick="document.querySelector('[data-filter=\'.filter-residential\']').click()"><b>Residential Construction</b></a>, <a style="color: #4169E1" href="#projects" onclick="document.querySelector('[data-filter=\'.filter-commercial\']').click()"><b>Commercial Construction</b></a>, and <a style="color: #4169E1" href="#contact"><b>Equipment and Material Solution</b></a>. We also offer architectural design, working closely with you to bring your vision to life. Our collaborative approach ensures that each project is tailored to meet individual needs with both functionality and style. Additionally, we provide essential resources for high-quality kitchen equipment, material, and furniture.</p>
+        </div>
+        <div id="alt-services-carousel" class="carousel slide col-lg-6" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-inner custom-carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/projects/Dental/dental-10.jpg" class="d-block w-100 custom-carousel-image" alt="..." loading="lazy">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/projects/buf-img/buf-24.jpg" class="d-block w-100 custom-carousel-image" alt="..." loading="lazy">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/service-img/service-img-5.JPG" class="d-block w-100 custom-carousel-image" alt="..." loading="lazy">
+            </div>
+            <!-- <div class="carousel-item">
+              <img src="assets/img/service-img/service-img-6.JPG" class="d-block w-100 custom-carousel-image" alt="..." loading="lazy">
+            </div> -->
+            <div class="carousel-item">
+              <img src="assets/img/service-img/service-img-9.jpeg" class="d-block w-100 custom-carousel-image" alt="..." loading="lazy">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/projects/Hibachi/hib-1.jpg", class="d-block w-100 custom-carousel-image" alt="..." loading="lazy">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/projects/Dental/dental-6.jpg" class="d-block w-100 custom-carousel-image" alt="..." loading="lazy">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#alt-services-carousel" role="button" data-bs-slide="prev">
+            <span class=" bi bi-chevron-left icon-circle"></span></a>
+          </a>
+          <a class="carousel-control-next" href="#alt-services-carousel" role="button" data-bs-slide="next">
+            <span class=" bi bi-chevron-right icon-circle"></span></a>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End Alt Services Section -->
+     
+    <!-- ======= Alt Services Section 2 ======= -->
+    <section id="alt-services-2" class="alt-services-2 .section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-around gy-4 mt-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column text-center">
+                <h5 class="card-title"><b>Commercial Construction</b></h5>
+                <p class="card-text">We are committed to excellence in commercial construction, ensuring that every project is executed with the highest level of integrity and professionalism.</p>
+                <a href="#projects" onclick="document.querySelector('[data-filter=\'.filter-commercial\']').click()" class="btn btn-danger mt-auto text-center w-100">Click to see our Work</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column text-center">
+          <h5 class="card-title"><b>Residential Construction</b></h5>
+          <p class="card-text">We prioritize the well-being and growth of our team while creating exceptional residential spaces. We support the development of our people and recognize their contributions to every successful project.</p>
+          <a href="#projects" onclick="document.querySelector('[data-filter=\'.filter-residential\']').click()" class="btn btn-danger mt-auto text-center w-100">Click to see our Work</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column text-center">
+          <h5 class="card-title"><b>Equipment & Materials</b></h5>
+          <p class="card-text">We offer a wide range of resources on kitchen equipment and furniture to meet your needs. Feel free to contact us for any inquiries.</p>
+          <a href="#contact" class="btn btn-danger mt-auto text-center w-100">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- End Alt Services Section 2 -->
+
 
     <!-- ======= Our Projects Section ======= -->
     <section id="projects" class="projects">
       <div class="container" data-aos="fade-up">
-        
-        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
-          
-          <ul class="portfolio-flters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active"><b>ALL</b></li>
-            <li data-filter=".filter-residential"><b>RESIDENTIAL</b></li>
-            <li data-filter=".filter-commercial"><b>COMMERICAL</b></li>
-            <li data-filter=".filter-industrial"><b>INDUSTRIAL</b></li>
-          </ul><!-- End Projects Filters -->
-
+        <div class="col d-flex flex-column justify-content-center">
+        <h3>Featured Projects</h3>
+        </div>
+        <div class="portfolio-isotope" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
           <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
             <div class="col-lg-4 col-md-6 portfolio-item filter-commercial">
               <div class="portfolio-content h-100">
                 <div class="portfolio-info">
-                  <a href="nail-salons-project-details.html">
-                    <img src="assets/img/projects/Nail-Salon/nail-4.png" class="img-fluid" alt="">
+                  <a href="#" class="open-modal" data-toggle="modal" data-target="#imageModal" data-category="nail-salon" data-index="0">
+                    <img src="assets/img/projects/Nail-Salon/nail-19.jpg" class="img-fluid" alt="" loading="lazy">
                   </a>
                 </div>
               </div>
@@ -262,98 +293,218 @@
                 <div class="portfolio-name">Nail Salons</div>
               </div>
             </div><!-- End Projects Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-commercial">
+            <div class="col-lg-4 col-md-6 portfolio-item">
               <div class="portfolio-content h-100">
                 <div class="portfolio-info">
-                  <a href="super-market-project-details.html">
-                    <img src="assets/img/projects/Market/ware-5.png" class="img-fluid" alt="">
+                  <a href="#" class="open-modal" data-toggle="modal" data-target="#imageModal" data-category="sushi-hibachi-resturant" data-index="0">
+                    <img src="assets/img/projects/Hibachi/hib-2.jpg" class="img-fluid" alt="" loading="lazy">
                   </a>
                 </div>
               </div>
               <div class="portfolio-subheading">
-                <div class="portfolio-name">Supermarkets</div>
+                <div class="portfolio-name">Sushi & Hibachi</div>
               </div>
             </div><!-- End Projects Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-commercial">
+            <div class="col-lg-4 col-md-6 portfolio-item">
               <div class="portfolio-content h-100">
                 <div class="portfolio-info">
-                  <a href="dental-office-project-details.html">
-                    <img src="assets/img/projects/Dental/dental-6.png" class="img-fluid" alt="">
+                  <a href="#" class="open-modal" data-toggle="modal" data-target="#imageModal" data-category="buf-resturant" data-index="0">
+                    <img src="assets/img/projects/buf-img/buf-27.jpg" class="img-fluid" alt="" loading="lazy">
                   </a>
                 </div>
               </div>
               <div class="portfolio-subheading">
-                <div class="portfolio-name">Dental Offices</div>
+                <div class="portfolio-name">Buffet Resturant</div>
               </div>
             </div><!-- End Projects Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-commercial">
+            <div class="col-lg-4 col-md-6 portfolio-item">
               <div class="portfolio-content h-100">
                 <div class="portfolio-info">
-                  <a href="ice-cream-project-details.html">
-                    <img src="assets/img/projects/Resturant/rest-3.png" class="img-fluid" alt="">
+                  <a href="#" class="open-modal" data-toggle="modal" data-target="#imageModal" data-category="ice-cream-shop" data-index="0">
+                    <img src="assets/img/projects/Resturant/rest-1.jpg" class="img-fluid" alt="" loading="lazy">
                   </a>
                 </div>
               </div>
               <div class="portfolio-subheading">
-                <div class="portfolio-name">Ice Cream Shops</div>
+                <div class="portfolio-name">Boba Tea & Cafe</div>
               </div>
             </div><!-- End Projects Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-commercial">
+            <div class="col-lg-4 col-md-6 portfolio-item">
               <div class="portfolio-content h-100">
                 <div class="portfolio-info">
-                  <a href="/Projects/cafe-project-details.html">
-                    <img src="assets/img/projects/Sushi/sushi-4.png" class="img-fluid" alt="">
+                  <a href="#" class="open-modal" data-toggle="modal" data-target="#imageModal" data-category="super-market" data-index="0">
+                    <img src="assets/img/projects/Market/ware-4.jpg" class="img-fluid" alt="" loading="lazy">
                   </a>
                 </div>
               </div>
               <div class="portfolio-subheading">
-                <div class="portfolio-name">Sushi Resturant</div>
+                <div class="portfolio-name">Supermarket</div>
               </div>
-            </div><!-- End Projects Item -->  
-            <div class="col-lg-4 col-md-6 portfolio-item filter-commercial">
+            </div><!-- End Projects Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item">
               <div class="portfolio-content h-100">
                 <div class="portfolio-info">
-                  <a href="cafe-project-details.html">
-                    <img src="assets/img/projects/Cafe/cafe-2.png" class="img-fluid" alt="">
+                  <a href="#" class="open-modal" data-toggle="modal" data-target="#imageModal" data-category="warehouse-professional-office" data-index="0">
+                    <img src="assets/img/projects/Dental/dental-6.jpg" class="img-fluid" alt="" loading="lazy">
                   </a>
                 </div>
               </div>
               <div class="portfolio-subheading">
-                <div class="portfolio-name">Cafe</div>
+                <div class="portfolio-name">Warehouse and Professional Office</div>
               </div>
-            </div><!-- End Projects Item --> 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-industrial">
+            </div><!-- End Projects Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item">
               <div class="portfolio-content h-100">
                 <div class="portfolio-info">
-                  <!-- <a href="warehouse-project-details.html"> -->
-                    <img src="assets/img/projects/tbd.png" class="img-fluid" alt="">
-                    <!-- </a> -->
+                  <a href="#" class="open-modal" data-toggle="modal" data-target="#imageModal" data-category="residential" data-index="0">
+                    <img src="assets/img/projects/home/home-1.jpg" class="img-fluid" alt="" loading="lazy">
+                  </a>
                 </div>
               </div>
               <div class="portfolio-subheading">
-                <div class="portfolio-name">Warehouse Facilities</div>
-              </div>
-            </div><!-- End Projects Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-residential">
-              <div class="portfolio-content h-100">
-                <div class="portfolio-info">
-                  <!-- <a href="project-details.html"> -->
-                    <img src="assets/img/projects/tbd.png" class="img-fluid" alt="">
-                  <!-- </a> -->
-                </div>
-              </div>
-              <div class="portfolio-subheading">
-                <div class="portfolio-name">Single Family Homes</div>
-              </div>
-            </div><!-- End Projects Item -->
+                <div class="portfolio-name">Residential</div>
+              </div><!-- End Projects Item -->
+          </div>
           </div>
         </div>
-
       </div>
     </section><!-- End Our Projects Section -->
-        
+  
+        <!-- ======= Choose Services Section ======= -->
+    <section id="choose-services" class="choose-services">
+      <div class="container" data-aos="fade-up">
+        <h3>Why Choose Us</h3>
+        <p style="color: black;">Our experienced team is equipped to handle projects of any size and complexity-from <a style="color: #4169E1;" href="#projects" onclick="document.querySelector('[data-filter=\'*\']').click()"> <b>RESIDENTIAL</b></a> builds to large-scale <a style="color: #4169E1;" href="#projects" onclick="document.querySelector('[data-filter=\'.filter-commercial\']').click()"><b>COMMERICAL</b></a> developments. Whether you're planning a major renovation, a new build, or anything in between, Leaders Construction Inc. is here to turn your vision into reality. <a style="color: #4169E1" href="#contact"><b>CONTACT US</b></a> today to discuss how we can help with your next construction project to meet your needs.</p>
+    
+        <div id="choose-services-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row justify-content-center gy-4">
+              <div class="col-lg-5 d-flex flex-column justify-content-start">
+                <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bi bi-check-circle flex-shrink-0"></i>
+                  <div>
+                    <h4><a  class="stretched-link">Experienced Team</a></h4>
+                    <p>Our team of experts brings years of hands-on experience, technical skills and professional experience, and a dedication to quality craftsmanship.</p>
+                  </div>
+                </div>
+                <!-- End Icon Box -->
+              </div>
+              <div class="col-lg-5 d-flex flex-column justify-content-start">
+                <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-check-circle flex-shrink-0"></i>
+                  <div>
+                    <h4><a  class="stretched-link">Project Management</a></h4>
+                    <p>From start to finish, we oversee every phase of the project, ensuring your project stays on time and within budget. Our skilled project managers coordinate all aspects, including subcontractor</p>
+                  </div>
+                </div>
+                <!-- End Icon Box -->
+              </div>
+          </div>
+        </div>
+        <div class="carousel-item custom-carousel-item">
+          <div class="row justify-content-center gy-4">
+            <div class="col-lg-5 d-flex flex-column justify-content-start">
+              <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-check-circle flex-shrink-0"></i>
+                <div>
+                  <h4><a class="stretched-link">Budgeting & Estimating</a></h4>
+                  <p>We provide detailed cost estimates and transparent budgeting to ensure there are no surprises along the way. Our team works closely with you to set realistic financial expectations and find cost-effective solutions.</p>
+                </div>
+              </div><!-- End Icon Box -->
+            </div>
+            <div class="col-lg-5 d-flex flex-column justify-content-start">
+                <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-check-circle flex-shrink-0"></i>
+                  <div>
+                    <h4><a class="stretched-link">Subcontractor Coordination</a></h4>
+                    <p>We manage and coordinate skilled subcontractors across various trades, including mechanical, electrical, plumbing, HVAC, and more, to ensure smooth workflow and high-quality results.</p>
+                  </div>
+                </div><!-- End Icon Box -->
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item custom-carousel-item">
+          <div class="row justify-content-center gy-4">
+            <div class="col-lg-5 d-flex flex-column justify-content-start">
+              <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="500">
+                <i class="bi bi-check-circle flex-shrink-0"></i>
+                <div>
+                  <h4><a  class="stretched-link">Residential Renovations & New Construction</a></h4>
+                  <p>From kitchen and bathroom remodels to full-home new construction, we help you re-imagine your living space with style, efficiency, and functionality.</p>
+                </div>
+              </div><!-- End Icon Box -->
+            </div>
+
+            <div class="col-lg-5 d-flex flex-column justify-content-start">
+              <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="600">
+              <i class="bi bi-check-circle flex-shrink-0"></i>
+                <div>
+                  <h4><a class="stretched-link">Commercial Renovations & New Construction</a></h4>
+                  <p>We work with business owners to upgrade or expand their facilities while minimizing downtime and disruptions. Our team ensures that your new space enhances productivity and leaves a lasting impression on clients.</p>
+                </div>
+              </div><!-- End Icon Box -->
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item custom-carousel-item">
+          <div class="row justify-content-center gy-4">
+          <div class="col-lg-5 d-flex flex-column justify-content-start">
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="700">
+            <i class="bi bi-check-circle flex-shrink-0"></i>
+            <div>
+              <h4><a  class="stretched-link">Design & Build</a></h4>
+              <p>We collaborate with you from concept and final design to construction completion, offering design services that reflect your vision, followed by seamless construction to bring it to life.</p>
+            </div>
+            </div><!-- End Icon Box -->
+          </div>
+          <div class="col-lg-5 d-flex flex-column justify-content-start">
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="800">
+            <i class="bi bi-check-circle flex-shrink-0"></i>
+            <div>
+              <h4><a  class="stretched-link">Permitting & Compliance</a></h4>
+              <p>Navigating permits and local regulations can be challenging. We handle all the necessary permits and ensure that your project is fully compliant with local governmental codes, rules, and regulations.</p>
+            </div>
+            </div><!-- End Icon Box -->
+          </div>
+          </div>
+        </div>
+        </div>
+          <a class="carousel-control-prev" href="#choose-services-carousel" role="button" data-bs-slide="prev">
+            <span class=" bi bi-chevron-left icon-circle"></span></a>
+          </a>
+          <a class="carousel-control-next" href="#choose-services-carousel" role="button" data-bs-slide="next">
+          <span class=" bi bi-chevron-right icon-circle"></span></a>
+        </div>
+      </div>
+    </section><!-- End Choose Services Section -->  
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="contact-row">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-text">
+            <h2>CONTACT US</h2>
+          </div>  
+          <div class="row gy-4">
+            <div class="col-lg-6 col-md-6">
+              <div class="info-item d-flex flex-column justify-content-center align-items-center">
+                <i class="bi bi-envelope"></i>
+                <p><b>info@leadersconstruction.org</b></p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-6 col-md-6">
+              <div class="info-item  d-flex flex-column justify-content-center align-items-center">
+                <i class="bi bi-telephone"></i>
+                <p><b>407-808-8849</b></p>
+              </div>
+            </div><!-- End Info Item -->
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
   </main><!-- End #main -->
 
     <!-- ======= Footer ======= -->
@@ -366,11 +517,6 @@
             <div class="col-lg-4 col-md-6">
               <div class="footer-info text-center">
                 <img src="assets/img/LeaderLogo1.png" alt="Leaders Construction Logo" style="max-width: 200px;">
-                <p>
-                  <br><strong>Phone:</strong> 407-808-8849 | 
-                  <strong>Email:</strong> chi@leadersconstruction.org<br>
-                </p>
-                
               </div>
             </div><!-- End footer info column-->
           </div>
@@ -380,17 +526,13 @@
       <div class="footer-legal text-center position-relative">
         <div class="container">
           <div class="copyright">
-            &copy; Copyright <strong><span>Leaders Construction</span></strong>. All Rights Reserved
+            &copy; 2020 | Copyright <strong><span>Leaders Construction</span></strong>. | &copy; All Rights Reserved
           </div>
         </div>
       </div>
   
     </footer>
-    <!-- End Footer -->
-
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
+    <!-- End Footer --> 
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
@@ -404,6 +546,203 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel">
+  <div class="modal-dialog custom-modal-size" role="document" style="max-width: 100%; margin: auto;">
+    <div class="modal-content"> 
+      <div class="modal-header" style="background-color: #343a40;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: black; background-color: transparent;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center" style="position: relative;">
+        <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+          <img id="modalImage" src="" alt="Modal Image" class="img-fluid rounded shadow-lg" 
+               style="object-fit: contain;">
+        </div>  
+          <!-- Clickable Left Side -->
+          <div id="leftClickArea" style="position: absolute; top: 0; left: 0; width: 50%; height: 100%; cursor: pointer;"></div>
+
+          <!-- Clickable Right Side -->
+          <div id="rightClickArea" style="position: absolute; top: 0; right: 0; width: 50%; height: 100%; cursor: pointer;"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Navigation Buttons -->
+    <button id="prevBtn" class="btn invisible-btn icon-circle left" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); z-index: 10;">&#8592;</button>
+    <button id="nextBtn" class="btn invisible-btn icon-circle right" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); z-index: 10;">&#8594;</button>   
+  </div>
+</div>
+<script>
+  document.getElementById("leftClickArea").addEventListener("click", function() {
+    document.getElementById("prevBtn").click();
+  });
+
+  document.getElementById("rightClickArea").addEventListener("click", function() {
+    document.getElementById("nextBtn").click();
+  });
+
+  
+</script>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    var imageCategories = {
+      "nail-salon": [
+      "assets/img/projects/Nail-Salon/nail-4.jpg", 
+      "assets/img/projects/Nail-Salon/nail-5.jpg",
+      "assets/img/projects/Nail-Salon/nail-6.jpg",
+      "assets/img/projects/Nail-Salon/nail-7.jpg",
+      "assets/img/projects/Nail-Salon/nail-8.jpg",
+      "assets/img/projects/Nail-Salon/nail-9.jpg",
+      "assets/img/projects/Nail-Salon/nail-10.jpg",
+      "assets/img/projects/Nail-Salon/nail-11.jpg",
+      "assets/img/projects/Nail-Salon/nail-12.jpg",
+      "assets/img/projects/Nail-Salon/nail-13.jpg",
+      "assets/img/projects/Nail-Salon/nail-14.jpg",
+      "assets/img/projects/Nail-Salon/nail-15.jpg",
+      "assets/img/projects/Nail-Salon/nail-16.jpg",
+      "assets/img/projects/Nail-Salon/nail-17.JPG",
+      "assets/img/projects/Nail-Salon/nail-18.jpg",
+      "assets/img/projects/Nail-Salon/nail-19.jpg",
+      "assets/img/projects/Nail-Salon/nail-20.jpg",
+    ],
+      "super-market": [
+      "assets/img/projects/Market/ware-1.jpg",
+      "assets/img/projects/Market/ware-2.jpg",
+      "assets/img/projects/Market/ware-3.jpg",
+      "assets/img/projects/Market/ware-4.jpg",
+      "assets/img/projects/Market/ware-5.jpg",
+
+    ],
+      "warehouse-professional-office": [
+      "assets/img/projects/Dental/dental-1.jpg",
+      "assets/img/projects/Dental/dental-2.jpg",
+      "assets/img/projects/Dental/dental-4.jpg",
+      "assets/img/projects/Dental/dental-5.jpg",
+      "assets/img/projects/Dental/dental-7.JPG",
+      "assets/img/projects/Dental/dental-8.JPG",
+      "assets/img/projects/Dental/dental-9.jpg",
+      "assets/img/goal-img/list-img-4.jpeg",
+      "assets/img/goal-img/list-img-5.jpeg",
+    ],
+      "ice-cream-shop": [
+      "assets/img/projects/Resturant/rest-1.jpg",
+      "assets/img/projects/Resturant/rest-2.jpg",
+      "assets/img/projects/Resturant/rest-3.jpg",
+      "assets/img/projects/Resturant/rest-4.jpg",
+      "assets/img/projects/Resturant/rest-5.jpg",
+      "assets/img/projects/Resturant/rest-6.jpg",
+      "assets/img/projects/Cafe/cafe-1.png",
+      "assets/img/projects/Cafe/cafe-2.png",
+      "assets/img/projects/Cafe/cafe-3.jpg",
+      "assets/img/projects/Cafe/cafe-4.jpg",
+      "assets/img/projects/Cafe/cafe-5.jpg",
+      "assets/img/projects/Cafe/cafe-6.jpg",
+    ],
+      "sushi-hibachi-resturant": [
+      "assets/img/projects/Sushi/sushi-1.png",
+      "assets/img/projects/Sushi/sushi-2.png",
+      "assets/img/projects/Sushi/sushi-3.jpg",
+      "assets/img/projects/Sushi/sushi-4.png",
+      "assets/img/projects/Hibachi/hib-2.jpg",
+      "assets/img/projects/Hibachi/hib-3.jpg",
+    ],
+    "buf-resturant": [
+      "assets/img/projects/buf-img/buf-2.jpg",
+      "assets/img/projects/buf-img/buf-3.jpg",
+      "assets/img/projects/buf-img/buf-6.jpg",
+      "assets/img/projects/buf-img/buf-7.jpg",
+      "assets/img/projects/buf-img/buf-10.jpg",
+      "assets/img/projects/buf-img/buf-11.jpg",
+      "assets/img/projects/buf-img/buf-12.jpg",
+      "assets/img/projects/buf-img/buf-15.jpg",
+      "assets/img/projects/buf-img/buf-16.jpg",
+      "assets/img/projects/buf-img/buf-17.jpg",
+      "assets/img/projects/buf-img/buf-18.jpg",
+      "assets/img/projects/buf-img/buf-20.jpg",
+      "assets/img/projects/buf-img/buf-21.jpg",
+      "assets/img/projects/buf-img/buf-22.jpg",
+      "assets/img/projects/buf-img/buf-23.jpg",
+      "assets/img/projects/buf-img/buf-25.jpg",
+      "assets/img/projects/buf-img/buf-26.jpg",
+      "assets/img/projects/buf-img/buf-27.jpg",
+      "assets/img/projects/buf-img/buf-28.jpg",
+      "assets/img/projects/buf-img/buf-29.jpg",
+      "assets/img/projects/buf-img/buf-30.jpg",
+      "assets/img/projects/buf-img/buf-33.jpg"
+    ],
+     "residential": [
+        "assets/img/projects/home/home-1.jpg",
+        "assets/img/projects/home/home-2.jpg",
+        "assets/img/projects/home/home-3.jpg",
+        "assets/img/projects/home/home-4.jpg",
+        "assets/img/projects/home/home-5.jpg",
+        "assets/img/projects/home/home-6.jpg",
+        "assets/img/projects/home/home-7.jpg",
+        "assets/img/projects/home/home-8.jpg",
+        "assets/img/projects/home/home-9.jpg",
+        "assets/img/projects/home/home-10.jpg",
+        "assets/img/projects/home/home-11.jpg",
+        "assets/img/projects/home/home-12.jpg",
+     ],
+    };
+
+    var currentIndex = 0;
+    var currentCategory = ""; 
+
+    $(document).on("click", ".open-modal", function() {
+    currentCategory = $(this).data('category');
+    currentIndex = $(this).data('index');
+    $('#modalImage').attr('src', imageCategories[currentCategory][currentIndex]);
+    });
+
+    $('#prevBtn').click(function() {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : imageCategories[currentCategory].length - 1;
+    $('#modalImage').attr('src', imageCategories[currentCategory][currentIndex]);
+    });
+
+    $('#nextBtn').click(function() {
+    currentIndex = (currentIndex < imageCategories[currentCategory].length - 1) ? currentIndex + 1 : 0;
+    $('#modalImage').attr('src', imageCategories[currentCategory][currentIndex]);
+    });
+
+    // Variables to track swipe gestures
+    let touchStartX = 0;
+    let touchMoveX = 0;
+
+    // Add event listeners to the modal image container
+    document.getElementById('imageModal').addEventListener('touchstart', function(event) {
+      if (event.touches.length === 1) {
+        touchStartX = event.touches[0].clientX;
+      }
+    }, false);
+
+    document.getElementById('imageModal').addEventListener('touchmove', function(event) {
+      if (event.touches.length === 1) {
+        touchMoveX = event.touches[0].clientX;
+      }
+    }, false);
+
+    document.getElementById('imageModal').addEventListener('touchend', function(event) {
+      if (touchMoveX !== 0) {
+        let diff = touchStartX - touchMoveX;
+        if (diff > 50) {
+          document.getElementById('nextBtn').click();
+        } else if (diff < -50) {
+          document.getElementById('prevBtn').click();
+        }
+        touchStartX = 0;
+        touchMoveX = 0;
+      }
+    }, false);
+
+  </script>
 
 </body>
 
