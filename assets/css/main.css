@@ -646,13 +646,15 @@ section {
   padding: 10px;
   background-color: #f9f9f9;
   border-radius: 0 0 5px 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(255, 0, 0, 0.1);
+  background-color: white;
 }
 
 .projects .portfolio-subheading .portfolio-name {
-  margin-top: 10px;
   font-size: 20px;
   color: black;
+  font-size: 30px;
+  font-weight: 450;
 }
 
 .projects .portfolio-subheading .portfolio-location {
