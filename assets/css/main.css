@@ -1,5 +1,5 @@
 /**
-* Template Name: UpConstruction - v1.3.0
+* Template Name: Leaders Construction - v1.3.0
 * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -27,6 +27,7 @@
 :root {
   scroll-behavior: smooth;
 }
+
 
 /*--------------------------------------------------------------
 # General
@@ -106,48 +107,6 @@ section {
     max-width: 60%;
   }
 }
-
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 140px 0 60px 0;
-  min-height: 40vh;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.breadcrumbs:before {
-  content: "";
-  background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  inset: 0;
-}
-
-.breadcrumbs .bread-box {
-  background-color: rgba(255, 255, 255, 0);
-  padding: 10px 20px; 
-  border-radius: 1px;
-  text-align: center; 
-  color: white; 
-}
-
-.breadcrumbs h2 {
-  font-size: 50px;
-  font-weight:100;
-  color: #fff;
-  font-family: var(--font-primary);
-}
-
-.breadcrumbs p {
-  font-size: 15px;
-  font-weight: 100;
-  font-family: var(--font-primary);
-}
-
-
 
 /*--------------------------------------------------------------
 # Scroll top button
@@ -243,37 +202,44 @@ section {
 .header {
   z-index: 997;
   position: absolute; /* Change to absolute to overlap hero section */
-  padding: 25px 0;
+  padding: 75px 0;
   height: 80px;
   top: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)); 
   background-size: cover;
+  border-bottom: .5px solid #fff;
 }
 
-
 .header .logo img {
-  max-height: 60px;
+  max-height: 100px;
   margin-right: 6px;
 }
 
 .header .logo h1 {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 700;
   color: #fff;
   margin-bottom: 0;
   font-family: var(--font-primary);
 }
 
-
 .header .logo h1 span {
-  color: var(--color-primary);
+  display: block;   
+  font-size: 0.39em;    
+  font-weight: normal; 
+  letter-spacing: 2px; 
+}
+
+.logo {
+  font-size: 48px;
+  font-weight: bold;
 }
 
 .header .subheading {
-  font-size: 10px;
-  font-weight: normal;
+  font-size: 14px;
+  font-weight: bold;
   color: #fff;
   text-align: center;
   margin-top: 1px;
@@ -311,7 +277,7 @@ section {
     justify-content: space-between;
     padding: 0 3px;
     font-family: var(--font-primary);
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 800;
     color: rgba(255, 255, 255);
     text-transform: uppercase;
@@ -1169,9 +1135,59 @@ section {
 .hero {
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 100vh; /* Full viewport height */
   overflow: hidden;
   z-index: 1; /* Ensure the hero section is in front */
+}
+
+.hero-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    z-index:10;
+
+    width:90%;
+    max-width:1000px;
+
+    text-align:center;
+    color:#fff;
+}
+
+.hero-subtitle{
+    font-family:'Manrope',sans-serif;
+    font-size:1.6rem;
+    font-weight:300;
+    margin-bottom:20px;
+}
+
+.hero-subtitle span{
+    font-family:'Cormorant Garamond',serif;
+    font-style:italic;
+    font-size:1.3em;
+}
+
+.hero-title{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: clamp(3rem, 5vw, 4.8rem);
+    font-weight: 400;
+    line-height: .98;
+    letter-spacing: -1px;
+    color: #fff;
+
+    margin: 0 auto 40px;
+
+    text-shadow: 0 2px 8px rgba(0,0,0,.25);
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: geometricPrecision;
+}
+
+.hero-btn{
+    padding:14px 38px;
+    border-radius:40px;
+    font-weight:600;
+    font-size:1rem;
 }
 
 .hero .carousel {
@@ -1184,42 +1200,35 @@ section {
 }
 
 .hero .carousel-item {
+
   position: absolute;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%; /* Ensure each carousel item takes the full height of the carousel */
-  transition-duration: 0.4s;
+  transition-duration: 0.3s;
+  filter: brightness(50%);
 }
-
+/*
 .hero .carousel-caption {
-  color: white;
-  text-align: left;
-  background-color: rgba(0, 0, 0, 0.3);
-  font-family: var(--font-primary);
-  font-size: 50px;
-  top: 0;
-  left: 0;
   position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: 3; /* Ensure the caption is in front */
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
 }
+*/
 
 .hero .carousel-caption h5 {
-  color: white;
-  text-align: center;
-  background-color: rgba(222, 28, 36, 0.5);
-  font-family: var(--font-primary);
-  font-size: 30px;
-  font-weight: bold;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  width: 100%;
+  font-family: 'Knewave', cursive;
+  color: red;
   text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow:
+  2px 2px 0 rgba(0,0,0,.25),
+  4px 4px 8px rgba(0,0,0,.2);
 }
 
 .hero .carousel-item::before {
@@ -1249,7 +1258,7 @@ section {
   background: none;
   font-size: 26px;
   line-height: 0;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.339);
   color: rgba(255, 255, 255, 0.6);
   border-radius: 50px;
   width: 54px;
@@ -1296,21 +1305,6 @@ section {
 .hero .info p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 18px;
-}
-
-.hero .carousel-caption h5 {
-  color: white;
-  text-align: center; /* Center the text */
-  background-color:rgba(222, 28, 36, .5);
-  font-family: var(--font-primary);
-  font-size: 20px;
-  font-weight: bold;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  width: 100%;
-  text-transform: uppercase;
 }
 
 .hero .info .btn-get-started {
@@ -1726,7 +1720,7 @@ section {
 
 
 .choose-services .icon-box p {
-  line-height: 24px;
+  line-height: x24px;
   font-size: 14px;
   margin-bottom: 0;
 }
@@ -1750,4 +1744,31 @@ section {
   .choose-services .container .carousel .carousel-inner {
     min-height: 500px;
   }
+}
+
+
+.fnt_t-big {
+    font-size: clamp(2rem, 3vw, 3rem);
+    line-height: 1;
+    font-weight: 400;
+    display: block;
+
+
+    text-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.8),
+        0 6px 12px rgba(0, 0, 0, 0.6),
+        0 10px 25px rgba(0, 0, 0, 0.4);
+
+}
+
+.fnt_t-small{
+    font-size: clamp(1rem, 2vw, 2rem);
+    line-height: 4.1;
+    font-weight: 400;
+    display: block;
+
+    text-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.8),
+        0 6px 12px rgba(0, 0, 0, 0.6),
+        0 10px 25px rgba(0, 0, 0, 0.4);
 }
