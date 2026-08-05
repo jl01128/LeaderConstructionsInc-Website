@@ -101,11 +101,11 @@
             </p>
 
             <h1 class="hero-title">
-              
-                Leading the Way <br>
-                in Construction Through <br>
-                Excellence, Reliability, and Commitment
+              <span>Leading the Way</span>
+              <span>in Construction Through</span>
+              <span>Excellence, Reliability, and Commitment</span>
             </h1>
+
 
             <a href="#projects" class="btn btn-danger hero-btn">
                 View Our Projects
@@ -209,267 +209,162 @@
     </section><!-- End Our Projects Section -->
 
     <!-- ======= VR Tour Section ======= -->
-    <section id="vr-tour" class="vr-tour-section">
-      <div class="container" data-aos="fade-up">
-        <div class="col d-flex flex-column justify-content-center mb-3">
-          <h3>Virtual Tour</h3>
-          <p>Take an immersive 360° walkthrough of one of our completed projects.</p>
-        </div>
 
-        <!-- Preview Card (hero image swaps on thumbnail hover) -->
-        <a href="https://vr.justeasy.cn/view/1797nb9s988832n6-1779888416.html" target="_blank" class="vr-preview-link">
-          <div class="vr-preview-card" id="vrPreviewCard" onclick="openVRModal()">
-            <img
-              src="assets/img/vr-thumbs/thumb.jpg"
-              alt="Beauty Store Virtual Tour Preview"
-              class="vr-preview-img"
-              id="vrHeroThumb"
-            />
-            <!-- Overlay -->
-            <div class="vr-overlay">
-              <div class="vr-play-btn">
-                <i class="bi bi-arrow-right-circle-fill"></i>
-              </div>
-              <div class="vr-overlay-text">
-                <span class="vr-badge"><i class="bi bi-badge-vr-fill"></i> 360° Tour</span>
-                <h4>Beauty Store</h4>
-                <p>Click to explore the full virtual walkthrough</p>
-              </div>
-            </div>
-          </div>
-        </div>a>
-      </div>
-    </section>
-    <!-- End VR Tour Section -->
+
+<section id="vr-tour" class="vr-tour-section">
+  <div class="container" data-aos="fade-up">
+
+    <div class="col d-flex flex-column justify-content-center mb-3">
+      <h3>Virtual Tours</h3>
+      <p>Explore some of our completed projects in immersive 360°.</p>
+    </div>
+
+
+    <div class="vr-grid">
+
+      <a class="vr-card" href="https://vr.justeasy.cn/view/1797nb9s988832n6-1779888416.html" target="_blank">
+        <img src="assets/img/vr-thumbs/nailSalon1.jpg" alt="">
+        <div class="vr-card-overlay">
+          <span class="vr-badge">360° Tour</span>
+          <h5>NAIL SALON 1</h5>
+        </div>
+      </a>
+
+      <a class="vr-card" href="https://vr.justeasy.cn/view/sbsh1w7798883j00-1779888443.html" target="_blank">
+        <img src="assets/img/vr-thumbs/nailSalon2.jpg" alt="">
+        <div class="vr-card-overlay">
+          <span class="vr-badge">360° Tour</span>
+          <h5>NAIL SALON 2</h5>
+        </div>
+      </a>
+
+      <a class="vr-card" href="https://vr.justeasy.cn/view/51s77gg938883e43-1779958567.html" target="_blank">
+        <img src="assets/img/vr-thumbs/nailSalon3.jpg" alt="">
+        <div class="vr-card-overlay">
+          <span class="vr-badge">360° Tour</span>
+          <h5>NAIL SALON 3</h5>
+        </div>
+      </a>
+
+           <a class="vr-card" href="https://vr.3d66.com/vr/index_detail_6667432.asp" target="_blank">
+        <img src="assets/img/vr-thumbs/nailSalon4.jpg" alt="">
+        <div class="vr-card-overlay">
+          <span class="vr-badge">360° Tour</span>
+          <h5>NAIL SALON 4</h5>
+        </div>
+      </a>
+
+      <a class="vr-card" href="https://vr.justeasy.cn/view/1b759257889h2l89-1763359808.html" target="_blank">
+        <img src="assets/img/vr-thumbs/supermarket.jpg" alt="">
+        <div class="vr-card-overlay">
+          <span class="vr-badge">360° Tour</span>
+          <h5>SUPERMARKET</h5>
+        </div>
+      </a>
+
+      <a class="vr-card" href="https://vr.3d66.com/vr/index_detail_6867692.asp" target="_blank">
+        <img src="assets/img/vr-thumbs/restaurant.jpg" alt="">
+        <div class="vr-card-overlay">
+          <span class="vr-badge">360° Tour</span>
+          <h5>BUFFET RESTAURANT</h5>
+        </div>
+      </a>
+
+      <a class="vr-card" href="https://vr.justeasy.cn/view/2q177hf92v715s67-1781074388.html" target="_blank">
+        <img src="assets/img/vr-thumbs/ramenRestaurant.jpg" alt="">
+        <div class="vr-card-overlay">
+          <span class="vr-badge">360° Tour</span>
+          <h5>RAMEN RESTAURANT</h5>
+        </div>
+      </a>
+
+
+      <!-- Repeat until you have 6 cards -->
+
+    </div>
+
+
+
+
+
+  </div>
+
+</div>
+
+
+    </div>
+  </section>
+
 
    
 
     <style>
       /* ── VR Tour Section ───────────────────────────── */
-      .vr-tour-section {
-        padding: 60px 0;
-      }
+.vr-grid{
 
-      .vr-preview-card {
-        position: relative;
-        width: 100%;
-        max-width: 860px;
-        margin: 0 auto;
-        border-radius: 12px;
-        overflow: hidden;
-        cursor: pointer;
-        box-shadow: 0 8px 40px rgba(0,0,0,0.18);
-        aspect-ratio: 16 / 7;
-        background: #1a1a1a;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1400px;   /* was 1000px */
+    width: 100%;
+    margin: 0 auto;
+}
 
-      .vr-preview-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 16px 56px rgba(0,0,0,0.28);
-      }
+.vr-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:12px;
+    display:block;
+    box-shadow:0 8px 24px rgba(0,0,0,.15);
+    transition:.3s;
+}
 
-      .vr-preview-img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-        transition: transform 0.5s ease;
-      }
+.vr-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 16px 40px rgba(0,0,0,.25);
+}
 
-      .vr-preview-card:hover .vr-preview-img {
-        transform: scale(1.03);
-      }
+.vr-card img{
+    width:100%;
+    aspect-ratio:4/3;
+    object-fit:cover;
+    display:block;
+}
 
-      /* ── Scene Strip ───────────────────────────────── */
-      .vr-scene-strip {
-        display: flex;
-        gap: 10px;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-top: 14px;
-        max-width: 860px;
-        margin-left: auto;
-        margin-right: auto;
-      }
+.vr-card-overlay{
+    position:absolute;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    padding:18px;
+    background:linear-gradient(to top,rgba(0,0,0,.75),rgba(0,0,0,.1));
+    color:#fff;
+}
 
-      .vr-scene-thumb {
-        flex: 1 1 120px;
-        max-width: 160px;
-        background: none;
-        border: 2px solid transparent;
-        border-radius: 8px;
-        overflow: hidden;
-        cursor: pointer;
-        padding: 0;
-        position: relative;
-        transition: border-color 0.25s, transform 0.25s;
-      }
+.vr-card-overlay h5{
+    margin:8px 0 0;
+    font-weight:600;
+}
 
-      .vr-scene-thumb img {
-        display: block;
-        width: 100%;
-        aspect-ratio: 1;
-        object-fit: cover;
-        filter: brightness(0.65);
-        transition: filter 0.25s;
-      }
+@media (max-width:768px){
+    .vr-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
 
-      .vr-scene-thumb span {
-        display: block;
-        text-align: center;
-        font-size: 0.72rem;
-        color: #555;
-        padding: 5px 4px 4px;
-        background: #f8f8f8;
-        transition: color 0.25s;
-      }
+@media (max-width:576px){
+    .vr-grid{
+        grid-template-columns:1fr;
+    }
+}
 
-      .vr-scene-thumb:hover img,
-      .vr-scene-thumb.active img {
-        filter: brightness(1);
-      }
-
-      .vr-scene-thumb.active {
-        border-color: #e63746;
-        transform: translateY(-2px);
-      }
-
-      .vr-scene-thumb.active span {
-        color: #e63746;
-        font-weight: 600;
-      }
-
-      .vr-scene-thumb:hover {
-        border-color: rgba(230,55,70,0.45);
-      }
-
-      .vr-overlay {
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(to top, rgba(0,0,0,0.78) 40%, rgba(0,0,0,0.1) 100%);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 16px;
-        transition: background 0.3s ease;
-      }
-
-      .vr-preview-card:hover .vr-overlay {
-        background: linear-gradient(to top, rgba(0,0,0,0.88) 40%, rgba(0,0,0,0.25) 100%);
-      }
-
-      .vr-play-btn {
-        font-size: 4.5rem;
-        color: white;
-        line-height: 1;
-        transition: transform 0.3s ease, color 0.3s ease;
-        filter: drop-shadow(0 2px 12px rgba(0,0,0,0.5));
-      }
-
-      .vr-preview-card:hover .vr-play-btn {
-        transform: scale(1.1);
-        color: #e63746;
-      }
-
-      .vr-overlay-text {
-        text-align: center;
-        color: white;
-      }
-
-      .vr-badge {
-        display: inline-block;
-        background: rgba(230, 55, 70, 0.85);
-        color: white;
-        font-size: 0.7rem;
-        font-weight: 600;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        padding: 4px 12px;
-        border-radius: 100px;
-        margin-bottom: 8px;
-      }
-
-      .vr-overlay-text h4 {
-        font-size: clamp(1rem, 2.5vw, 1.4rem);
-        font-weight: 600;
-        margin: 0 0 4px;
-        text-shadow: 0 2px 8px rgba(0,0,0,0.6);
-      }
-
-      .vr-overlay-text p {
-        font-size: 0.82rem;
-        color: rgba(255,255,255,0.7);
-        margin: 0;
-      }
-
-      /* ── VR Modal ──────────────────────────────────── */
-      .vr-modal {
-        display: none;
-        position: fixed;
-        inset: 0;
-        z-index: 9999;
-        background: rgba(0,0,0,0.92);
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        animation: vrFadeIn 0.25s ease;
-      }
-
-      .vr-modal.open {
-        display: flex;
-      }
-
-      @keyframes vrFadeIn {
-        from { opacity: 0; }
-        to   { opacity: 1; }
-      }
-
-      .vr-modal-inner {
-        position: relative;
-        width: 100%;
-        max-width: 1100px;
-        aspect-ratio: 16 / 9;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 24px 80px rgba(0,0,0,0.6);
-        background: #000;
-      }
-
-      .vr-modal-close {
-        position: absolute;
-        top: 12px;
-        right: 14px;
-        z-index: 10;
-        background: rgba(0,0,0,0.6);
-        border: none;
-        color: white;
-        font-size: 1.6rem;
-        line-height: 1;
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        cursor: pointer;
-        transition: background 0.2s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .vr-modal-close:hover { background: #e63746; }
-
-      @media (max-width: 576px) {
-        .vr-modal-inner {
-          aspect-ratio: 4 / 3;
-        }
-      }
     </style>
 
     <script>
       function setHeroThumb(btn, src) {
         document.getElementById('vrHeroThumb').src = src;
-        document.querySelectorAll('.vr-scene-thumb').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.vr-tour-option').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
       }
 

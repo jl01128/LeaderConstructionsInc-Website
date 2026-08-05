@@ -1166,12 +1166,12 @@ section {
 .hero-subtitle span{
     font-family:'Cormorant Garamond',serif;
     font-style:italic;
-    font-size:1.3em;
+    font-size:1.2em;
 }
 
 .hero-title{
     font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: clamp(3rem, 5vw, 4.8rem);
+    font-size: clamp(2rem, 5vw, 4.5rem);
     font-weight: 400;
     line-height: .98;
     letter-spacing: -1px;
@@ -1183,6 +1183,11 @@ section {
 
     -webkit-font-smoothing: antialiased;
     text-rendering: geometricPrecision;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  line-height: 1.15;
 }
 
 .hero-btn{
@@ -1748,29 +1753,3 @@ section {
   }
 }
 
-
-.fnt_t-big {
-    font-size: clamp(2rem, 3vw, 3rem);
-    line-height: 1;
-    font-weight: 400;
-    display: block;
-
-
-    text-shadow:
-        0 2px 4px rgba(0, 0, 0, 0.8),
-        0 6px 12px rgba(0, 0, 0, 0.6),
-        0 10px 25px rgba(0, 0, 0, 0.4);
-
-}
-
-.fnt_t-small{
-    font-size: clamp(1rem, 2vw, 2rem);
-    line-height: 4.1;
-    font-weight: 400;
-    display: block;
-
-    text-shadow:
-        0 2px 4px rgba(0, 0, 0, 0.8),
-        0 6px 12px rgba(0, 0, 0, 0.6),
-        0 10px 25px rgba(0, 0, 0, 0.4);
-}
