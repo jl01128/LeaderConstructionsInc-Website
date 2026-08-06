@@ -439,108 +439,23 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Constructions Section
---------------------------------------------------------------*/
-.constructions .card-item {
-  border: 1px solid rgba(82, 86, 94, 0.2);
-  background: #fff;
-  position: relative;
-  border-radius: 0;
-}
-
-.constructions .card-item .card-bg {
-  min-height: 300px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.constructions .card-item .card-body {
-  padding: 30px;
-}
-
-.constructions .card-item h4 {
-  font-weight: 700;
-  font-size: 20px;
-  margin-bottom: 15px;
-  color: var(--color-secondary);
-}
-
-.constructions .card-item p {
-  color: var(--color-secondary);
-  margin: 0;
-}
 
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
-.services .service-item {
-  padding: 40px;
-  background: #fff;
-  height: 100%;
+.services {
+  background-image: url("../img/services.jpg");
+  background-size: cover;
+  
 }
 
-.services .service-item .icon {
-  width: 48px;
-  height: 48px;
-  position: relative;
-  margin-bottom: 50px;
+.services p{
+  color: black;
+  font-size: 20px;
+  font-weight: 800;
 }
 
-.services .service-item .icon i {
-  color: var(--color-secondary);
-  font-size: 40px;
-  transition: ease-in-out 0.3s;
-  z-index: 2;
-  position: relative;
-  line-height: 1.8;
-}
 
-.services .service-item .icon:before {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 100%;
-  background: #f0f1f2;
-  border-radius: 50px;
-  z-index: 1;
-  top: 10px;
-  right: -15px;
-  transition: 0.3s;
-}
-
-.services .service-item h3 {
-  color: var(--color-default);
-  font-weight: 700;
-  margin: 0 0 20px 0;
-  padding-bottom: 8px;
-  font-size: 22px;
-  position: relative;
-  display: inline-block;
-  border-bottom: 4px solid #ebebed;
-  transition: 0.3s;
-}
-
-.services .service-item p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.services .service-item .readmore {
-  margin-top: 15px;
-  display: inline-block;
-  color: var(--color-primary);
-}
-
-.services .service-item:hover .icon:before {
-  background: var(--color-primary);
-}
-
-.services .service-item:hover h3 {
-  border-color: var(--color-primary);
-}
 
 /*--------------------------------------------------------------
 # Our Projects Section
@@ -548,11 +463,7 @@ section {
 .projects {
   padding-top:10px;
 }
-.projects h3 {
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--color-secondary);
-}
+
 
 .projects h3:after {
   content: "";
@@ -568,7 +479,7 @@ section {
 .projects h3 {
   font-size: 28px;
   font-weight: 700;
-  color: var(--color-secondary);
+  color: black;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
@@ -663,227 +574,28 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Alt Services Section
+# Services Section
 --------------------------------------------------------------*/
 
-.alt-services {
+.services {
   padding-bottom: 0px;
-  background-color: #f5f6f7;
 }
-.alt-services .img-bg {
+.services .img-bg {
   background-size: cover;
   background-position: center center;
   min-height: 400px;
 }
 
-.alt-services h3 {
+.services h3 {
   font-size: 28px;
   font-weight: 700;
-  color: var(--color-secondary);
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-}
-
-.alt-services h3:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: var(--color-primary);
-  left: 0;
-  bottom: 0;
-}
-
-.alt-services .icon-box {
-  margin-top: 50px;
-}
-
-.alt-services .icon-box i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-primary);
-  margin-right: 25px;
-  font-size: 28px;
-  width: 56px;
-  height: 56px;
-  border-radius: 4px;
-  line-height: 0;
-  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.08);
-  background-color: #fff;
-  transition: 0.3s;
-}
-
-.alt-services .icon-box:hover i {
-  background-color: var(--color-primary);
-  color: #fff;
-}
-
-.alt-services .icon-box h4 {
-  font-weight: 700;
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-.alt-services .icon-box h4 a {
-  color: #000;
-  transition: 0.3s;
-}
-
-.alt-services .icon-box h4 a:hover {
-  color: var(--color-primary);
-}
-
-.alt-services .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.alt-services .icon-circle,
-.alt-services .icon-circle {
-  width: 40px; /* Adjust size as needed */
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.1); /* Light background */
-}
-
-.alt-services .custom-carousel-inner {
-  height: 300px; /* Set a fixed height for the carousel */
-}
-
-.alt-services .custom-carousel-image {
-  height: 100%;
-  object-fit: cover; /* Ensure the images cover the entire area without changing their aspect ratio */
-}
-
-
-
-/*--------------------------------------------------------------
-# Alt Services Section
---------------------------------------------------------------*/
-
-.alt-services-2 {
-  background-color: #f5f6f7;
-  padding-top: 0px;
-}
-.alt-services-2 .img-bg {
-  background-size: cover;
-  background-position: center center;
-  min-height: 400px;
-}
-
-.alt-services-2 h3 {
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--color-secondary);
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-}
-
-.alt-services-2 h3:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: var(--color-primary);
-  left: 0;
-  bottom: 0;
-}
-
-.alt-services-2 .icon-box {
-  margin-top: 50px;
-}
-
-.alt-services-2 .icon-box i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-primary);
-  margin-right: 25px;
-  font-size: 28px;
-  width: 56px;
-  height: 56px;
-  border-radius: 4px;
-  line-height: 0;
-  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.08);
-  background-color: #fff;
-  transition: 0.3s;
-}
-
-.alt-services-2 .icon-box:hover i {
-  background-color: var(--color-primary);
-  color: #fff;
-}
-
-.alt-services-2 .icon-box h4 {
-  font-weight: 700;
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-.alt-services-2 .icon-box h4 a {
-  color: #000;
-  transition: 0.3s;
-}
-
-.alt-services-2 .icon-box h4 a:hover {
-  color: var(--color-primary);
-}
-
-.alt-services-2 .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.alt-services-2 .card-text {
-  font-size: 12px;
-}
-
-.alt-services-2 .card {
   color: black;
-  border: 1px solid #ddd;
-  padding: 10px;
-  background-color: #f9f9f9;
-  border-radius:5px 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-
-
-/*--------------------------------------------------------------
-# Alt Services 10 Section
---------------------------------------------------------------*/
-
-.alt-services-10 {
-  padding: 20px;
-
-}
-
-.alt-services-10 .img-bg {
-  background-size: cover;
-  background-position: center center;
-  min-height: 400px;
-}
-
-.alt-services-10 h3 {
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--color-secondary);
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
 }
 
-.alt-services-10 h3:after {
+.services h3:after {
   content: "";
   position: absolute;
   display: block;
@@ -894,11 +606,11 @@ section {
   bottom: 0;
 }
 
-.alt-services-10 .icon-box {
+.services .icon-box {
   margin-top: 50px;
 }
 
-.alt-services-10 .icon-box i {
+.services .icon-box i {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -914,34 +626,31 @@ section {
   transition: 0.3s;
 }
 
-.alt-services-10 .icon-box:hover i {
+.services .icon-box:hover i {
   background-color: var(--color-primary);
   color: #fff;
 }
 
-.alt-services-10 .icon-box h4 {
+.services .icon-box h4 {
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 18px;
 }
 
-.alt-services-10 .icon-box h4 a {
-  color: #000;
-  transition: 0.3s;
-}
 
-.alt-services-10 .icon-box h4 a:hover {
+
+.services .icon-box h4 a:hover {
   color: var(--color-primary);
 }
 
-.alt-services-10 .icon-box p {
+.services .icon-box p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.alt-services-10 .icon-circle,
-.alt-services-10 .icon-circle {
+.services .icon-circle,
+.services .icon-circle {
   width: 40px; /* Adjust size as needed */
   height: 40px;
   display: flex;
@@ -951,11 +660,11 @@ section {
   background-color: rgba(0, 0, 0, 0.1); /* Light background */
 }
 
-.alt-services-10 .custom-carousel-inner {
+.services .custom-carousel-inner {
   height: 300px; /* Set a fixed height for the carousel */
 }
 
-.alt-services-10 .custom-carousel-image {
+.services .custom-carousel-image {
   height: 100%;
   object-fit: cover; /* Ensure the images cover the entire area without changing their aspect ratio */
 }
@@ -965,7 +674,7 @@ section {
 # About Section
 --------------------------------------------------------------*/
 .about {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 .about h2 {
   font-size: 48px;
@@ -983,7 +692,7 @@ section {
 
 .about .our-story {
   padding: 40px;
-  background-color: #f5f6f7;
+  background-color: #000000d2;
 }
 
 @media (min-width: 991px) {
@@ -995,18 +704,20 @@ section {
 .about .our-story h4 {
   text-transform: uppercase;
   font-size: 18px;
-  color: #838893;
+  color: #ffffff;
+  padding-top: 20px;
 }
 
 .about .our-story h3 {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: var(--color-secondary);
+  color: rgb(186, 49, 49);
 }
 
-.about .our-story p:last-child {
+.about .our-story p{
   margin-bottom: 0;
+  color: white
 }
 
 .about ul {
@@ -1027,27 +738,20 @@ section {
   color: var(--color-primary);
 }
 
-.about .watch-video i {
-  font-size: 32px;
-  transition: 0.3s;
-  color: var(--color-primary);
+
+.about-image {
+
+  justify-content: center;
+  align-items: center;
+
 }
 
-.about .watch-video a {
-  font-weight: 600;
-  color: var(--color-secondary);
-  margin-left: 8px;
-  transition: 0.3s;
-}
 
-.about .watch-video:hover a {
-  color: var(--color-primary);
-}
+.about-image img {
+  height: 495px;
+  width: 100%;
+  
 
-.about .about-img {
-  min-height: 600px;
-  background-size: cover;
-  background-position: center;
 }
 
 @media (min-width: 992px) {
@@ -1653,8 +1357,7 @@ section {
 --------------------------------------------------------------*/
 
 .choose-services {
-  background-color: #f8f9fa; /* Optional: Set a background color */
-  padding-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.049);
 }
 
 .choose-services h3 {
@@ -1674,8 +1377,10 @@ section {
   bottom: 0;
 }
 
-.choose-services .container {
+.services .container {
   margin: 0 auto; /* Center the container */
+  background-color: #ffffff91; /* Optional: Add a background color for better visibility */
+
 }
 
 .choose-services .img-bg {
@@ -1728,7 +1433,7 @@ section {
 
 .choose-services .icon-box p {
   line-height: x24px;
-  font-size: 14px;
+  font-size: 20px;
   margin-bottom: 0;
 }
 
@@ -1745,6 +1450,7 @@ section {
 
 .choose-services .container .carousel .carousel-inner {
   min-height: 200px;
+  
 }
 
 @media (max-width: 768px) {
@@ -1753,3 +1459,85 @@ section {
   }
 }
 
+
+.values-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px 20px;
+}
+
+.value-card {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.value-card h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #12263F;
+    margin-bottom: 18px;
+}
+
+.value-card p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #34495E;
+    max-width: 470px;
+}
+
+@media (max-width: 900px) {
+    .values-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+
+
+
+@media (max-width: 600px) {
+    .icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .icon img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .value-card h2 {
+        font-size: 1.6rem;
+        padding: 10px 100px;
+    }
+
+    .value-card p {
+        font-size: 1rem;
+    }
+}
+
+.vr-tour h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: black;
+  margin: 0;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.vr-tour h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--color-primary);
+  left: 0;
+  bottom: 0;
+}

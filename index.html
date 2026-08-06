@@ -58,7 +58,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="#header">Home</a></li>
-          <li><a href="#alt-services-3">Services</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav><!-- .navbar -->
@@ -113,11 +113,143 @@
 
         </div>
     </div>
-
-
-    
   </section>
   <!-- End Hero Section -->
+
+
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+  <div class="container">
+
+    <div class="row align-items-center">
+
+      <!-- About Text Left -->
+      <div class="col-lg-7">
+        <div class="our-story">
+          <h3>Who We Are</h3>
+          <p>
+            Leaders Construction Inc. is the known leading construction firm 
+            specializing in architectural and engineering services, permitting, 
+            and construction of Commercial and Residential projects across Florida. 
+          </p>
+
+          <h4>Our foundation is built on:</h4>
+
+          <ul>
+            <li><i class="bi bi-check-circle" ></i> <span style="color: white;">INTEGRITY</span></li>
+            <li><i class="bi bi-check-circle"></i> <span style="color: white;">RESPECT</span></li>
+            <li><i class="bi bi-check-circle"></i> <span style="color: white;">HARD WORK</span></li>
+          </ul>
+
+          <p>
+            We are experienced in budgeting, scheduling, designing, and completing 
+            construction projects successfully. We are familiar with governmental 
+            codes, rules, and regulations.
+          </p>
+        </div>
+      </div>
+
+      
+
+      <!-- Image Right -->
+      <div class="col-lg-5">
+        <div class="about-image">
+          <img src="assets/img/about.jpg" class="img-fluid" alt="Leaders Construction">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ======= Services Section ======= -->
+<section id="services" class="services">
+  <div class="container" data-aos="fade-up">
+    <h3>Our Services</h3>
+    <div class="row mb-5">
+      <div class="col-lg-10 mx-auto text-center">
+
+         <div class="col-12 d-flex flex-column justify-content-center">
+        
+
+          <p>
+            We provide services in renovation and new construction projects specializing in
+            <a style="color:#4169E1;" href="#projects"
+              onclick="document.querySelector('[data-filter=\'.filter-residential\']').click()">
+              <b>Residential Construction</b>
+            </a>,
+            <a style="color:#4169E1;" href="#projects"
+              onclick="document.querySelector('[data-filter=\'.filter-commercial\']').click()">
+              <b>Commercial Construction</b>
+            </a>, and
+            <a style="color:#4169E1;" href="#contact">
+              <b>Equipment &amp; Material Solutions</b>
+            </a>.
+
+            We also offer architectural design services, working closely with you to
+            bring your vision to life. Our collaborative approach ensures every project
+            is tailored to meet your needs while balancing functionality, quality, and
+            style. Additionally, we provide sourcing for premium kitchen equipment,
+            building materials, and furniture.
+          </p>
+
+
+          
+          <div class="values-container">
+
+            <div class="value-card">
+              <div class="icon">
+                <i class="bi bi-award" style="color:red;font-size:6rem;background-color:black;"></i>
+              </div>
+              <h2>PROJECT MANAGEMENT</h2>
+            </div>
+
+            <div class="value-card">
+              <div class="icon">
+                <i class="bi bi-pencil-square" style="color:red;font-size:6rem;background-color:black;"></i>
+              </div>
+              <h2>ARCHITECTURAL &amp; ENGINEERING</h2>
+            </div>
+
+            <div class="value-card">
+              <div class="icon">
+                <i class="bi bi-file-earmark-text" style="color:red;font-size:6rem;background-color:black;"></i>
+              </div>
+              <h2>PERMITTING</h2>
+            </div>
+
+            <div class="value-card">
+              <div class="icon">
+                <i class="bi bi-cash-stack" style="color:red;font-size:6rem;background-color:black;"></i>
+              </div>
+              <h2>BUDGETING</h2>
+            </div>
+
+            <div class="value-card">
+              <div class="icon">
+                <i class="bi bi-tools" style="color:red;font-size:6rem;background-color:black;"></i>
+              </div>
+              <h2>EQUIPMENT &amp; MATERIALS</h2>
+            </div>
+
+            <div class="value-card">
+              <div class="icon">
+                <i class="bi bi-building" style="color:red;font-size:6rem;background-color:black;"></i>
+              </div>
+              <h2>CONSTRUCTION</h2>
+            </div>
+
+          </div><!-- /.values-container -->
+        </div>
+      </div>
+    </div><!-- /.row -->
+  </div> <!-- /.container -->
+</section>
+<!-- End Services Section -->
+
 
   <!-- ======= Main Section ======= -->
   <main id="main">    
@@ -208,10 +340,11 @@
       </div>
     </section><!-- End Our Projects Section -->
 
-    <!-- ======= VR Tour Section ======= -->
+  <main id="main">
+    
 
-
-<section id="vr-tour" class="vr-tour-section">
+<!-- ======= VR Tour Section ======= -->
+<section id="vr-tour" class="vr-tour">
   <div class="container" data-aos="fade-up">
 
     <div class="col d-flex flex-column justify-content-center mb-3">
@@ -300,6 +433,8 @@
 
     <style>
       /* ── VR Tour Section ───────────────────────────── */
+
+
 .vr-grid{
 
     display: grid;
